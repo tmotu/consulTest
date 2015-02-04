@@ -1,5 +1,5 @@
 #bin/bash
-status=$(curl --silent http://localhost:8500/v1/kv/test?raw)
+status=$(curl --silent http://localhost:8500/v1/kv/servicestatus?raw)
 
 if [ $status -eq 0 ]
 then
